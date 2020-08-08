@@ -26,32 +26,3 @@ while True:
 s.close()
 
 
-'''
-create a socket at this end and connect it to server's IP and Port using s.connect()
-by passing a tuple of addresses as argument.
-
-os module : provides a way of using 'OPERATING SYSTEM' dependent functionality.The functions
-that the OS module provides allows you to interface
-with the underlying operating system that Python is running on be that Windows,
-Mac or Linux.
-
-client side socket port number will be randomly assigned by the OS.
-2^16-1 = 65535(including 0)
-
-If it is 'cd' we ask the OS to change the directory. Because it doesnt give us any data it just changes
-the directory
-
-if length of the data(command received) is greater than 0 that means we have a command.
-we create a subprocess and
-" All the input and output to that are through standard stream(stdout,stdin,stderr) so we use PIPE"
-// very very important
-
-Then we use output in both bytes and string.
-and we have to send in bytes + the path + >
-
-If the len(data) is NOT greater than 0, then that if FAILS. so
-
-
-
-'''
-
