@@ -43,11 +43,13 @@ address -->It is a list.Information related to the client
 address[0] = ip address(already a string)
 address[1] = port address.
 socket.accept()
+
 Accept a connection. The socket must be bound to an address and listening for connections.
 The return value is a pair(conn, address) where conn is a new socket object(connection) usable to send
 and receive data on the connection, and address is the address bound to the socket on the
 other end of the connection.(client side's).
 input() ---> Takes command from the prompt
+
 we don't stop after one command. So we put it inside while(1)
 if cmd==quit. we close the connection. we close the socket and we quit. We quit using sys.exit()
 This module provides a number of functions and variables that can be used to manipulate different
@@ -55,7 +57,10 @@ parts of the Python runtime environment.
 For sending the data across the network we need to convert the data into bytes. That is done
   using encode(). We encode it and send it across the network. We are checking the length because
   to execute something if there is some cmd. No commands--> length=0
-  Then we send the command thru using    send()
+  Then we send the command thru using    
+  
+  send()
+  
 Then the client will execute the command and returns the result. we shd store it.
 we use conn.recv(1024). Where,1024 is the buffer size and we have to convert it back to string
   using of the techniques(utf-8). We can use decode function also if needed.
